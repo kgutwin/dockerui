@@ -76,7 +76,7 @@
             <td>Labels:</td>
             <td>
                 <ul>
-                    <li ng-repeat="k in container.Config.Labels">{{ k }}</li>
+                    <li ng-repeat="(k, v) in container.Config.Labels">{{ k }}:{{ v }}</li>
                 </ul>
             </td>
         </tr>
