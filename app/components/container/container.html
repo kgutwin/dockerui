@@ -73,6 +73,14 @@
             </td>
         </tr>
         <tr>
+            <td>Labels:</td>
+            <td>
+                <ul>
+                    <li ng-repeat="(k, v) in container.Config.Labels">{{ k }}:{{ v }}</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
             <td>Environment:</td>
             <td>
                 <ul>
